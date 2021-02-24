@@ -10,10 +10,10 @@ This application is a workout tracker, it is made to track daily workouts and sp
 - [License](#license)
 
 💻 HTML generated:
-![Screen Shot of Webpage]()
+![Screen Shot of Webpage](./public/images/screenshot.png)
 
 🎥 Live Link:
-[Live Link through Heroku]()
+[Live Link through Heroku](https://sleepy-badlands-89555.herokuapp.com/?id=6035cc0e7d63a90015281379)
 
 ## User Story
 
