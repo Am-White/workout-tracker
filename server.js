@@ -18,10 +18,14 @@ app.use(require("./routes/api.js"));
 app.use(require("./routes/view.js"));
 
 //Connecting to mongodb
-mongoose.connect("mongodb://localhost/workout", {
+mongoose.connect(
+    process.env.MONGODB_URI || "mongodb://localhost/workout", 
+    {
+    useUnifiedTopology: true,
     useNewUrlParser: true,
+    useCreateIndex: true,
     useFindAndModify: false
-});
+  });
 
 app.listen(PORT, () => {
     console.log(`App is running on port ${PORT}!`);
